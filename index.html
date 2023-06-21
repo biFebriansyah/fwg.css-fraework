@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Movie</title>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#5F2EEA'
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header class="bg-white">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between p-5">
+                <div class="md:flex md:gap-x-12 items-center justify-between">
+                    <a href="/">
+                        <img class="md:h-12 h-10 md:w-auto" src="./assets//logo.png" alt="logo" />
+                    </a>
+                    <div class="hidden md:flex md:gap-x-12">
+                        <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-900">List Movie</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex lg:justify-end">
+                    <a href="#" class="text-sm bg-primary inline-block rounded-md border border-transparent px-8 py-3 text-center text-white">Sign Up</a>
+                </div>
+                <div class="flex md:hidden">
+                    <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <div class="mx-auto max-w-7xl p-5 flex sm:flex-row flex-col-reverse items-center justify-between lg:h-128">
+                <div class="flex-initial sm:text-left text-center">
+                    <h3 class="lg:text-2xl font-normal text-gray-400 md:mb-4">Nearest Cinema, Newest Movie</h3>
+                    <h1 class="lg:text-6xl md:text-4xl text-2xl font-medium text-primary">Find out now!</h1>
+                </div>
+                <div class="flex-initial">
+                    <img class="lg:h-auto md:h-96 h-80 md:w-auto" src="./assets/hero.png" alt="hero" />
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
